@@ -5,4 +5,16 @@
     {{article.level}}
   </span>
   <p>{{article.body}}</p>
+  <div>
+      <h4>Handeln:</h4>
+      <ul *ngFor="let url of article.url_action">
+        <a href="{{url.url}}">{{url.title}}</a>
+      </ul>
+  </div>
+  <div>
+      <h4>Weiterlesen:</h4>
+      <ul *ngFor="let url of article.url_explanation">
+        <a href="{{url.url}}">{{url.title}}</a>
+      </ul>
+  </div>
 </div>

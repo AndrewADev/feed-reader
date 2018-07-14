@@ -9,7 +9,7 @@ export class Article {
     categories: string[];
     url_action: UrlOverview[];
     url_explanation: UrlOverview[];
-    
+
     isDanger(): boolean {
         return '3' === this.level;
     }
