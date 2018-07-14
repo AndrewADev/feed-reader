@@ -9,6 +9,8 @@ See here for installing npm: https://nodejs.org/en/download/
 
 See here for installing Angular: https://angular.io/guide/quickstart 
 
+After both `npm` and Angular installed, don't forget to run `npm install` in the same directoy as package.json to install the needed packages.
+
 ## Running
 
 With dependencies installed, run the command `npm start`. This will fire up the app, and the backend server. It may take a couple seconds before both are running.
