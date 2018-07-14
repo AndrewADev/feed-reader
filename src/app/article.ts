@@ -9,4 +9,16 @@ export class Article {
     categories: string[];
     url_action: UrlOverview[];
     url_explanation: UrlOverview[];
+
+    isDanger(): boolean {
+        return '3' === this.level;
+    }
+
+    isWarning(): boolean {
+        return '2' === this.level;
+    }
+
+    isGood(): boolean {
+        return '1' === this.level;
+    }
 }

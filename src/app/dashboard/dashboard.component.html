@@ -1,8 +1,11 @@
 <h3>Neues zur Sicherheit im Netz</h3>
 <div>
   <ul>
-    <li *ngFor="let article of articles">
-      <span>{{article.title}}</span>
+    <li 
+      *ngFor="let article of articles"
+      [ngClass]="{'danger': '3' === article.level, 'warning': '2' === article.level, 'good': '1' === article.level}" >
+      <span >Title: {{article.title}}</span>
+      <span >Level: {{article.level}}</span>
     </li>
   </ul>
 </div>
