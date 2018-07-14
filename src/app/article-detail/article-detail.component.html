@@ -1,0 +1,8 @@
+<div *ngIf="article">
+  <h3>Titel: {{article.Title}}</h3>
+  <span>Stufe:</span>
+  <span  [ngClass]="{'danger': '3' === article.level, 'warning': '2' === article.level, 'good': '1' === article.level}" >
+    {{article.level}}
+  </span>
+  <p>{{article.body}}</p>
+</div>

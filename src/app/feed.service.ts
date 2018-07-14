@@ -15,4 +15,8 @@ export class FeedService {
     return of(ARTICLES);
   }
 
+  getArticle(id: number): Observable<Article> {
+    return of(ARTICLES.find(article => +article.id === id));
+  }
+
 }
