@@ -25,14 +25,9 @@ export class FeedService {
   ) { }
 
   getArticles(): Observable<Article[]> {
-    // if (this.articles.length < 1) {
-    //   this.fetchArticles();
-    // }
-    // this.fetchArticles();
-    // return of(this.articles);
     return this.http.get<Article[]>(this.apiUrl)
               .pipe(
-                tap(articles => console.log(`Successfully fetched {{articles.length} articles`)),
+                tap(articles => console.log(`Successfully fetched ${articles.length} articles`)),
                 catchError(this.handleError('getArticles', []))
               );
   }

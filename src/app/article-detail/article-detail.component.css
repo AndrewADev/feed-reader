@@ -11,5 +11,11 @@
 }
 
 .label {
-    font-weight: bold !important; 
+    font-weight: bold; 
+}
+
+.feature {
+    border-color: slategrey;
+    border-style: solid; 
+    padding: 0.2em;
 }

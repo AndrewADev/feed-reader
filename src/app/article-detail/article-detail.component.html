@@ -1,21 +1,23 @@
 <div *ngIf="article">
-  <h3>Titel: {{article.title}}</h3>
-  <span class="label">Stufe:</span>
-  <span  [ngClass]="{'danger': '3' === article.level, 'warning': '2' === article.level, 'good': '1' === article.level}" >
-    {{article.level}}
-  </span>
-  <p>{{article.body}}</p>
-  <div>
-      <h4>Handeln:</h4>
-      <ul *ngFor="let url of article.url_action">
-        <a href="{{url.url}}">{{url.title}}</a>
-      </ul>
+  <div class="feature">
+    <h3>Titel: {{article.title}}</h3>
+    <span class="label">Stufe:</span>
+    <span  [ngClass]="{'danger': '3' === article.level, 'warning': '2' === article.level, 'good': '1' === article.level}" >
+      {{article.level}}
+    </span>
+    <p>{{article.body}}</p>
+    <div>
+        <h4>Handeln:</h4>
+        <ul *ngFor="let url of article.url_action">
+          <a href="{{url.url}}">{{url.title}}</a>
+        </ul>
+    </div>
+    <div>
+        <h4>Weiterlesen:</h4>
+        <ul *ngFor="let url of article.url_explanation">
+          <a href="{{url.url}}">{{url.title}}</a>
+        </ul>
+    </div>
+    <button (click)="goBack()">Zurück</button>
   </div>
-  <div>
-      <h4>Weiterlesen:</h4>
-      <ul *ngFor="let url of article.url_explanation">
-        <a href="{{url.url}}">{{url.title}}</a>
-      </ul>
-  </div>
-  <button (click)="goBack()">Zurück</button>
 </div>

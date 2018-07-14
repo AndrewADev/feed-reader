@@ -5,7 +5,7 @@
       *ngFor="let article of articles"
       [ngClass]="{'danger': '3' === article.level, 'warning': '2' === article.level, 'good': '1' === article.level}" >
       <p class="list-item" routerLink="/article/{{article.id}}">
-        <span class="label">Title:</span> {{article.title}}
+        <span class="label">Titel:</span> {{article.title}}
         <br/>
         <span class="label">Stufe:</span> {{article.level}}
         <br/>
