@@ -1,11 +1,12 @@
-import { UrlOverview } from "./url-overview";
+import { UrlOverview } from './url-overview';
 
 export class Article {
-    id: number;
-    published_date: Date;
-    level: number;
+    id: string;
+    published_date: number;
+    level: string;
     title: string;
     body: string;
-    categories: number[];
-    url_action: UrlOverview;
+    categories: string[];
+    url_action: UrlOverview[];
+    url_explanation: UrlOverview[];
 }
