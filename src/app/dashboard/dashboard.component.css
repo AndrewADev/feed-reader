@@ -9,3 +9,17 @@
 .good {
     background-color: green;
 }
+
+.list-item {
+    border-color: slategrey;
+    border-style: solid; 
+    padding: 0.1em;
+}
+
+.preview-msg {
+    font-style: italic;
+}
+
+.label {
+    font-weight: bold !important; 
+}

@@ -4,10 +4,13 @@
     <li 
       *ngFor="let article of articles"
       [ngClass]="{'danger': '3' === article.level, 'warning': '2' === article.level, 'good': '1' === article.level}" >
-      <a routerLink="/article/{{article.id}}">
-        <span >Title: {{article.title}}</span>
-        <span >Stufe: {{article.level}}</span>
-      </a>
+      <p class="list-item" routerLink="/article/{{article.id}}">
+        <span class="label">Title:</span> {{article.title}}
+        <br/>
+        <span class="label">Stufe:</span> {{article.level}}
+        <br/>
+        <span class="label">Inhalt:</span> <span  class="preview-msg">{{article.body.slice(0,99)}}...</span>
+      </p>
     </li>
   </ul>
 </div>
