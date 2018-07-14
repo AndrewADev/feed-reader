@@ -72,5 +72,35 @@ export const ARTICLES: Article[] = [ {
       }
     ],
     id: '2758'
+  },
+  {
+    published_date: Date.parse('1530167400'),
+    level: '1',
+    title: 'Datenleck betrifft Kunden von Ticketmaster',
+    body: 'Ticketmaster vertreibt auf einer Online-Plattform Eintrittskarten zu Veranstaltungen aller Art. Wie das Unternehmen nun '
+    + 'bekannt gab, gab es bei einem Partnerunternehmen einen Sicherheitsvorfall, aufgrund dessen persönliche Daten von '
+    + 'Ticketmaster-Kunden in die Hände von Dritten gelangt sind.\r\n\r\nHintergrund ist eine Schadsoftware, die das Kundendienst-Tool'
+    + ' infiziert hat, das Ticketmaster Großbritannien verwendet. Die Angreifer hatten Zugriff auf persönliche Informationen sowie '
+    + 'Zahlungsdaten von Kunden, die zwischen September 2017 und Juni 2018 Tickets gekauft haben oder versucht haben, Tickets zu '
+    + 'erwerben.\r\n\r\nTicketmaster schätzt, dass rund 5% der weltweiten Kunden betroffen sind – diese wurden vom Unternehmen über '
+    + 'den Vorfall per E-Mail informiert. SiBa rät insbesondere Kunden, die eine E-Mail bekommen haben, aber auch allen anderen dazu, '
+    + 'das verwendete Passwort zu ändern. Achten Sie darüber hinaus auf verdächtige Aktivitäten auf Ihrem Konto.',
+    categories: [
+      '37',
+      '43'
+    ],
+    url_action: [
+      {
+        url: 'https://www.ticketmaster.de/myAccount/loginRegister.php#forgot',
+        title: 'Passwort zurücksetzen'
+      }
+    ],
+    url_explanation: [
+      {
+        url: 'https://sicherheit.ticketmaster.de/',
+        title: 'Hilfe-Seite von Ticketmaster zum Vorfall'
+      }
+    ],
+    id: '2738'
   }
 ];
